@@ -1,0 +1,8 @@
+**HOW TO INSTALL MINECRAFT WEB PANEL**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/kingsley360/bedrock-web-panel/refs/heads/main/install.sh | sudo bash
+```
+
+
+
