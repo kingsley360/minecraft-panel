@@ -8,7 +8,7 @@ SERVER_DIR="$ROOT_DIR/Server"
 BACKUP_DIR="$ROOT_DIR/BackupWorlds"
 WORLD_NAME="Bedrock level"
 SCREEN_NAME="bedrock"  # your server screen name
-LOG_FILE="$ROOT_DIR/backup.log"
+LOG_FILE="$ROOT_DIR/minecraft.log"
 DATE=$(date +"%F_%H-%M-%S")
 
 mkdir -p "$BACKUP_DIR"
