@@ -2,7 +2,7 @@
 set -e
 
 # ================= CONFIG =================
-GITHUB_REPO="https://github.com/NewVPN09/minecraft-panel"
+GITHUB_REPO="https://github.com/kingsley360/minecraft-panel"
 PHP_VERSION="8.4"
 IP=$(curl -4s https://api.ipify.org)
 
@@ -162,8 +162,6 @@ echo "============================================"
 echo " ✅ INSTALL COMPLETE!"
 echo "============================================"
 echo " 🌍 Panel: http://$IP"
-echo " 📂 Minecraft Dir: /home/minecraft"
-echo " 💾 Backup Dir: /home/minecraft/BackupWorlds"
 echo "============================================"
 
 # ================= PERMISSION FIX (ADDED) =================
