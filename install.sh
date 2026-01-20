@@ -173,3 +173,19 @@ chmod +x /home/minecraft/manage_screen.sh
 if [ -f /home/minecraft/Server/bedrock_server ]; then
     chmod +x /home/minecraft/Server/bedrock_server
 fi
+
+# Navigate to your server directory
+cd /home/minecraft/Server
+
+# Ensure the log file exists
+touch minecraft.log
+
+# Make it owned by the server user and group
+chown minecraft:minecraft minecraft.log
+
+# Give read/write permissions to owner, read for group/others
+chmod 644 minecraft.log
+
+# Ensure the folder itself is writable
+chmod 755 /home/minecraft/Server
+
