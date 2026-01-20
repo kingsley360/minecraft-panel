@@ -153,16 +153,9 @@ echo "[10/10] Configuring firewall..."
 ufw allow 22/tcp
 ufw allow 80/tcp
 ufw allow 443/tcp
+ufw allow 19132/udp
 ufw allow 24680/udp
 ufw --force enable
-
-# ================= FINAL =================
-echo ""
-echo "============================================"
-echo " ✅ INSTALL COMPLETE!"
-echo "============================================"
-echo " 🌍 Panel: http://$IP"
-echo "============================================"
 
 # ================= PERMISSION FIX (ADDED) =================
 echo "[FIX] Applying final permissions..."
@@ -189,3 +182,10 @@ chmod 644 minecraft.log
 # Ensure the folder itself is writable
 chmod 755 /home/minecraft/Server
 
+# ================= FINAL =================
+echo ""
+echo "============================================"
+echo " ✅ INSTALL COMPLETE!"
+echo "============================================"
+echo " 🌍 Panel: http://$IP"
+echo "============================================"
